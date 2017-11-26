@@ -53,13 +53,13 @@ client.on('message', message => {
 	/*Возвращает справку*/
 	if(command === "help"||command === "помощь"||command === "справка") {
 		return message.reply(`
-**__Справка обо мне__**:
-	Обращаться со знаком "`+process.env.PREFIX+`", другие сообщения не читаю
-**__Знаю команды__**:
-	say __  _  __ (фраза) - говорю ваши слова
-	clear __  _  __ (число) - очищаю несколько сообщений (до 100)
-	help - справка
-	invite - пригласить меня в чат`);
+** __ Help about me __ **:
+Handle the sign `` + process.env.PREFIX + `", I do not read other messages
+** __ I know the commands __ **:
+say ___ __ (phrase) - I say your words
+clear __ _ __ (number) - clear several messages (up to 100)
+help - help
+invite - invite me to chat`);
 	}
     
 	/*Отправляет ссылку для добавления бота в другой чат*/
